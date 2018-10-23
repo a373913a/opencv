@@ -7,6 +7,7 @@ path = "./photo/myobject"
 filelist = os.listdir(path)
 total_num = len(filelist)
 
+#i = 1
 n = 6
 for i in range(1,total_num):
     n = 6 - len(str(i))
@@ -26,3 +27,6 @@ for i in range(1,total_num):
             img = img*mask2[:,:,np.newaxis]
             print('輸出檔案：%s_%s_%s.jpg' %(str(0)*n + str(i),str(a),str(b)))
             cv2.imwrite('./save/%s_%s_%s.jpg' %(str(0)*n + str(i),str(a),str(b)),img)
+        
+
+
