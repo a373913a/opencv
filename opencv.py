@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 from PIL import Image
 import os
-from numba import vectorize
 import time
 
 path = "./photo/myobject"
@@ -10,10 +9,7 @@ path = "./photo/myobject"
 filelist = os.listdir(path)
 total_num = len(filelist)
 
-"""
-@vectorize(["Image(Image)"],target='cuda')
-def grabcut_gpu(img):
-"""
+
 
     
 n = 6
