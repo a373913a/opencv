@@ -17,3 +17,5 @@ if __name__ == "__main__":
 
     for i in range(100):
         tree.write('./VOCdevkit/VOC2007/Annotations/milktea_'+str(i)+'.xml',encoding='UTF-8')
+
+
