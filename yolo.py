@@ -19,7 +19,7 @@ from yolo3.utils import letterbox_image
 
 class YOLO(object):
     def __init__(self):
-        self.model_path = 'model_data/logsep090-loss0.517-val_loss0.560.h5' # model path or trained weights path
+        self.model_path = 'model_data/logstrained_weights_final_2.h5' # model path or trained weights path
         self.anchors_path = 'model_data/yolo_anchors.txt'
         self.classes_path = 'model_data/my_class.txt'
         self.score = 0.3
